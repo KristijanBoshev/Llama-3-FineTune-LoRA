@@ -1,18 +1,20 @@
 **Finetuning LLaMA-3 8B with LoRA and UnSloth**
 =====================================================
 
-This repository can be used as an example on how to fine-tune LLaMA-3 on downstream task. It contains the code and model weights for finetuning the LLaMA-3 8B model with LoRA and UnSloth techniques. The whole proccess was done on Tesla T4 GPU with 15GB RAM.
-
-## *DISCLAIMER*
-
-
-The contents provided are solely for educational purposes. The model and dataset utilized in this project were extensive, and due to resource limitations, the conditions for comprehensive testing may not have been met. 
+This repository serves as a comprehensive guide on how to fine-tune the LLaMA-3 model on specific downstream tasks. It includes the necessary code for fine-tuning the LLaMA-3 8B model using LoRA technique.
 
 **Model Description**
 --------------------
 
 The LLaMA-3 8B model is a powerful language model created by Meta AI. It was fine-tuned just two days after its initial release. Trained on a dataset containing 120,000 coding examples, this model ensures high-quality results for coding tasks.
 
+**Fine-tuning with UnSloth**
+
+To fine-tune the LLaMA-3 8B model, we utilized the UnSloth tool, which significantly reduced the memory requirements for fine-tuning. By leveraging UnSloth's 4-bit format, we were able to fine-tune the model using a fraction of the memory needed for traditional fine-tuning methods.
+
+*Comparison to 16-bit Model*
+
+In contrast, our stored model uses the traditional 16-bit format, which results in a larger model size. This highlights the memory efficiency of the UnSloth technique, making it an attractive option for fine-tuning large language models like LLaMA-3 8B.
 
 
 **Finetuning Details**
@@ -39,4 +41,4 @@ The LLaMA-3 8B model is a powerful language model created by Meta AI. It was fin
 **Model Hub**
 -------------
 
-This model is available on the Hugging Face Model Hub: kiko2001/llama-3-coding-mk
+The model is available [here](https://huggingface.co/kiko2001/llama-3-coding-mkd), on the Hugging Face Model Hub.
