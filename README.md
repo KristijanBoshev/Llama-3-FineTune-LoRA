@@ -38,7 +38,7 @@ In contrast, our stored model uses the traditional 16-bit format, which results 
     + `output_dir`: "outputs"
 
 
-**Model Hub**
+**Deployment**
 -------------
 
 The model is available [here](https://huggingface.co/kiko2001/llama-3-coding-mkd), on the Hugging Face Model Hub.
